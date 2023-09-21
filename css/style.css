@@ -41,6 +41,30 @@ a {
     text-decoration: none; }
   a.more {
     font-weight: 600; }
+    .btn-explore {
+      background-color: #224F34;
+      width: 258px;
+      height: 74px;
+      font-size: 20px;
+      line-height: 52.8px;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      text-decoration: none;
+      box-shadow: 0 12px 6px -9px #0000004D;
+      
+
+    }
+    .btn-explore:hover {
+      transition: all 1s all ease;
+      border: 2px solid #224F34;
+      background: transparent;
+      color: #224F34;
+      text-decoration: none;
+    }
 
 .custom-navbar {
   padding-top: 20px;
@@ -190,6 +214,14 @@ a {
       font-size: 20px;
       font-weight: 500;
     }
+    .button:hover {
+      border: none;
+      color: #ffffff;
+      background-color: #224F34;
+      transition: 0.5s all ease-in-out;
+      border-radius: 10%;
+
+    }
     .center-nav {
       display: flex;
       justify-content: center;
@@ -220,10 +252,7 @@ a {
       font-size: 22px;
       line-height: 33px;
       color: #224F34;
-
-
     }
- 
     .cart{
       margin-top: 20%;
       padding-right: 20%;

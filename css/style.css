@@ -154,6 +154,11 @@ a {
       .hero .intro-excerpt {
         max-width: 1450px; } }
   .hero h1 {
+    box-shadow: inset 0 0 0 0 #224F34;
+    color: #224F34;
+    padding: 0 .75rem;
+    margin: 0 -.75rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     font-weight: 700;
     font-family: 'Rufina', sans-serif;                
     color: #224F34;
@@ -161,7 +166,12 @@ a {
     margin-bottom: 30px; }
     @media (min-width: 1400px) {
       .hero h1 {
-        font-size: 84px; } }
+        font-size: 84px; }
+       }
+       .hero h1:hover {
+        color: #ffffff;
+        box-shadow: inset 610px 0 0 0 #224F34;
+       }
   .hero p {
     color: #267D49;
     font-size: 24px;
@@ -204,6 +214,13 @@ a {
       width: 570px;
       height: 717px;
       margin-top: 10%;
+      transition: 1s ease;
+    }
+    .right-img:hover {
+      -webkit-transform: rotateZ(-5deg);
+      -ms-transform: rotateZ(-5deg);
+       transform: rotateZ(-5deg);
+       transition: 1s ease;
     }
     .button {
       border: 2px solid #224F34;

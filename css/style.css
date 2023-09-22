@@ -141,9 +141,22 @@ a {
 .hero {
   padding: calc(4rem - 30px) 0 0rem 0; }
   @media (min-width: 768px) {
-    .hero {
+    .hero  {
       padding: calc(4rem - 30px) 0 4rem 0;
-    height: 150%; } }
+    
+       } }
+      @media (min-width: 768px) {
+        .document {
+          background-color: #C2EFD4;
+          height: 160vh;
+        }
+      }
+      @media (min-width: 992px) {
+        .document {
+          background-color: #C2EFD4;
+          height: 110vh;
+        }
+      }
   @media (min-width: 992px) {
     .hero {
       padding: calc(8rem - 30px) 0 8rem 0; } }
@@ -187,7 +200,6 @@ a {
       top: 0px;
       right: 0px;
       z-index: 2;
-      width: 100%;
       height: auto;
        }
       @media (min-width: 768px) {
@@ -260,11 +272,11 @@ a {
       font-size: 64px;
       list-style: 84.41px;
       font-family: 'Roboto Slab', sans-serif;
-      margin-top: 10vh;
+      margin-top: 11vh;
     }
     .ptext {
       font-family: 'Poppins', sans-serif;
-      margin-top: 5vh;
+      margin-top: 4vh;
       font-weight: 500;
       font-size: 22px;
       line-height: 33px;
@@ -275,8 +287,8 @@ a {
       padding-right: 20%;
     }
     .second-section {
-      border: 6px dotted orange;
       height: 120vh;
+      border: 2px solid orange;
     }
     .products {
       background-color: transparent;
@@ -354,18 +366,43 @@ a {
     .items {
       padding: 2rem 0;
       display: grid;
-      width: 80vw;
+      width: 90vw;
       margin: 0 auto;
       grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
       gap: 5rem;
   }
-    .xyz {
-      padding: 2rem 0;
+    .grid-item {
+      padding: 3rem 9rem;
       display: grid;
-      width: 80vw;
+      width: 100vw;
       margin: 0 auto;
       grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
-      gap: 5rem;
+      gap: -5rem;
+  }
+  #poster {
+    width: 24vw;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #267D49;
+  }
+  #title {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #373737;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 25vw;
+    background-color: transparent;
+    border: none;
   }
   .item {
       background: transparent;
@@ -444,5 +481,14 @@ a {
     background-color: #224F34;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
-
   }
+  /* resposine menu */
+  @media (min-width: 768px) {
+    .hamburger {
+      display: none;
+     } }
+     @media (min-width: 768px) {
+      .navbar-expand-md {
+           justify-content:flex-start;
+      }
+    }  

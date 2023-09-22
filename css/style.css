@@ -392,40 +392,6 @@ a {
     margin: 0 auto;
     background-color: #267D49;
   }
-  .price {
-    width: 18vw;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  #price {
-    color: #454545;
-    font-weight: 500;
-    font-size: 22px;
-    font-family: 'Poppins', sans-serif;
-    line-height: 33px;
-  }
-  .vl {
-    border-left: 2px solid #454545;
-    height: 30px;
-  }
-  #rating {
-    display: flex;
-    justify-content: flex-end;
-    color: #454545;
-    font-weight: 500;
-    font-size: 22px;
-    font-family: 'Poppins', sans-serif;
-    line-height: 33px;
-  }
-  #rating::after {
-    content: "\2605";
-   position: relative;
-   color: #F5D426;
-   padding-left: 15%;
-   width: 20%;
-   height: 20%;
-  }
   #title {
     margin: 0 auto;
     text-align: center;
@@ -442,9 +408,9 @@ a {
   .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-left: -10%;
-    border: none;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 25vw;
     background-color: transparent;
   }
 

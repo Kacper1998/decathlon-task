@@ -288,7 +288,6 @@ a {
     }
     .second-section {
       height: 120vh;
-      border: 2px solid orange;
     }
     .products {
       background-color: transparent;
@@ -386,6 +385,27 @@ a {
     margin: 0 auto;
     background-color: #267D49;
   }
+  .price {
+    width: 25vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #price {
+    color: #454545;
+    font-weight: 500;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 33px;
+  }
+  #rating {
+    display: flex;
+    justify-content: flex-end;
+    color: #454545;
+    font-weight: 500;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 33px;
+  }
   #title {
     margin: 0 auto;
     text-align: center;
@@ -394,11 +414,15 @@ a {
     font-weight: 600;
     font-size: 22px;
     line-height: 33px;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    width: 18.5vw;
   }
   .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 0 auto;
     width: 25vw;
     background-color: transparent;
@@ -487,8 +511,15 @@ a {
     .hamburger {
       display: none;
      } }
-     @media (min-width: 768px) {
-      .navbar-expand-md {
-           justify-content:flex-start;
-      }
-    }  
+     .hamburger, .cross {
+      background-color: #ffffff;
+      width: 50px;
+      height: 50px;
+      border: none;
+     }
+     .ham-inside {
+      color: #267D49;
+      width: 40px;
+      height: 40px;
+     }
+  

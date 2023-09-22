@@ -411,6 +411,7 @@ a {
     justify-content: space-evenly;
     margin: 0 auto;
     width: 25vw;
+    border:none;
     background-color: transparent;
   }
 

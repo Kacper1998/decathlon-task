@@ -373,11 +373,13 @@ a {
       width: 100vw;
       margin: 0 auto;
       grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
       gap: -5rem;
       }
   }
   @media (max-width: 700px) {
-    .grid-item, .items { grid-template-columns: repeat(1, 1fr); }
+    .grid-item, .items { grid-template-columns: repeat(1, 1fr);
+    display: grid; }
   }
 
     #poster {
@@ -391,6 +393,40 @@ a {
     justify-content: center;
     margin: 0 auto;
     background-color: #267D49;
+  }
+  .price {
+    width: 18vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #price {
+    color: #454545;
+    font-weight: 500;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 33px;
+  }
+  .vl {
+    border-left: 2px solid #454545;
+    height: 30px;
+  }
+  #rating {
+    display: flex;
+    justify-content: flex-end;
+    color: #454545;
+    font-weight: 500;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 33px;
+  }
+  #rating::after {
+    content: "\2605";
+   position: relative;
+   color: #F5D426;
+   padding-left: 15%;
+   width: 20%;
+   height: 20%;
   }
   #title {
     margin: 0 auto;
@@ -406,12 +442,11 @@ a {
     width: 18.5vw;
   }
   .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 0 auto;
+    margin: -10%;
     width: 25vw;
     border:none;
+    justify-self: center;
+    padding-top: 15%;
     background-color: transparent;
   }
 
@@ -518,4 +553,4 @@ a {
       width: 40px;
       height: 40px;
      }
-  
+     

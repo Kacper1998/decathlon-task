@@ -1,4 +1,4 @@
-fetch("https://fakestoreapi.com/products?limit=3")
+fetch("https://fakestoreapi.com/products?limit=3", )
 .then(response => response.json())
 .then((data) => {
     let data1 = "";
@@ -79,3 +79,5 @@ fetch("https://fakestoreapi.com/products?limit=6")
     });
 
     /* jquery hamburger code here ends */
+
+    

@@ -17,15 +17,14 @@ body {
   font-size: 14px;
   background-color: #eff2f1; }
   .document {
-    height: 115vh;
+    height: 1375vh;
     background-color: #C2EFD4;
     margin: 0 auto;
     width: 100vw;
   }
   @media (max-width: 768px) {
     .document {
-    
-    height: 150%;
+    height: 190vh;
    }
    }
 
@@ -76,19 +75,7 @@ a {
     font-weight: 400;
     color: #224F34;
   line-height: 49.08px; }
-    .custom-navbar .navbar-brand > span {
-      opacity: .4; }
-  .custom-navbar .navbar-toggler {
-    border-color: red;
-  }
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 
-  }
-    .custom-navbar .navbar-toggler:active, .custom-navbar .navbar-toggler:focus {
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      outline: none; }
   @media (min-width: 992px) {
     .custom-navbar .custom-navbar-nav li {
       margin-left: 15px;
@@ -145,16 +132,17 @@ a {
       padding: calc(4rem - 30px) 0 4rem 0;
     
        } }
+
       @media (min-width: 768px) {
         .document {
           background-color: #C2EFD4;
-          height: 160vh;
+          height: 200vh;
         }
       }
       @media (min-width: 992px) {
         .document {
           background-color: #C2EFD4;
-          height: 110vh;
+          height: 120vh;
         }
       }
   @media (min-width: 992px) {
@@ -367,17 +355,36 @@ a {
       display: grid;
       width: 100vw;
       margin: 0 auto;
-      grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
-      gap: -5rem;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      gap: 5rem;
   }
     .grid-item {
       padding: 3rem 9rem;
       display: grid;
       width: 100vw;
       margin: 0 auto;
-      grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
-      gap: -5rem;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5rem;
   }
+  @media (max-width: 1100px) {
+    .grid-item, .items {
+      padding: 3rem 9rem;
+      display: grid;
+      width: 100vw;
+      margin: 0 auto;
+      grid-template-columns: repeat(2, 1fr);
+      gap: -5rem;
+      }
+  }
+  @media (max-width: 700px) {
+    .grid-item, .items { grid-template-columns: repeat(1, 1fr); }
+  }
+
+    #poster {
+      width: 100%;
+  height: auto;
+    }
+  
   #poster {
     width: 24vw;
     display: flex;
@@ -436,10 +443,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 auto;
-    width: 25vw;
-    background-color: transparent;
+    margin-left: -10%;
     border: none;
+    background-color: transparent;
   }
 
   .item {
